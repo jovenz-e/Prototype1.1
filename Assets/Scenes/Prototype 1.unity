@@ -221,11 +221,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 194810, guid: 09082afec7b5e824ca611a0cc3264bcd, type: 3}
   m_PrefabInstance: {fileID: 708090378}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &392809373 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 428284, guid: 09082afec7b5e824ca611a0cc3264bcd, type: 3}
-  m_PrefabInstance: {fileID: 708090378}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &392809374
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -340,6 +335,7 @@ GameObject:
   m_Component:
   - component: {fileID: 534669905}
   - component: {fileID: 534669904}
+  - component: {fileID: 534669906}
   - component: {fileID: 534669903}
   m_Layer: 0
   m_Name: Main Camera
@@ -415,13 +411,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534669902}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.2840153, y: -0, z: -0, w: 0.95881975}
+  m_LocalRotation: {x: 0.2840153, y: 0.000000014901161, z: -0.000000014901161, w: 0.9588198}
   m_LocalPosition: {x: 0, y: 5, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 392809373}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 33, y: 0, z: 0}
+--- !u!114 &534669906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 534669902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9d422f13b2c84c9e870002fe9259d44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 392809369}
 --- !u!1001 &708090378
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -476,10 +485,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 428284, guid: 09082afec7b5e824ca611a0cc3264bcd, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 534669905}
+    m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 194810, guid: 09082afec7b5e824ca611a0cc3264bcd, type: 3}
       insertIndex: -1
@@ -866,6 +872,7 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 534669905}
   - {fileID: 170076735}
   - {fileID: 1385500138}
   - {fileID: 708090378}
